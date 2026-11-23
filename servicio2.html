@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manicure y Pedicure | Belleza Total</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">✂ Belleza Total</div>
+    <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicio1.html">Corte y Estilismo</a>
+      <a href="servicio2.html" class="activo">Manicure y Pedicure</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Manicure y Pedicure</h2>
+
+    <section class="detalle">
+      <img src="https://loremflickr.com/800/600/manicure" alt="Manicure profesional">
+      <div>
+        <h3>¿Qué ofrecemos?</h3>
+        <p>Cuidamos tus manos y pies con productos de calidad y herramientas esterilizadas, en un ambiente cómodo y relajante.</p>
+        <ul>
+          <li>Manicure y pedicure tradicional</li>
+          <li>Esmaltado semipermanente (gel)</li>
+          <li>Uñas acrílicas y esculpidas</li>
+          <li>Diseños y decoración de uñas (nail art)</li>
+          <li>Spa de pies con exfoliación e hidratación</li>
+        </ul>
+      </div>
+    </section>
+
+    <h3>Galería</h3>
+    <div class="galeria">
+      <img src="https://loremflickr.com/400/300/nails?lock=5" alt="Uñas decoradas">
+      <img src="https://loremflickr.com/400/300/manicure?lock=6" alt="Manicure">
+      <img src="https://loremflickr.com/400/300/pedicure?lock=7" alt="Pedicure">
+      <img src="https://loremflickr.com/400/300/nailpolish?lock=8" alt="Esmaltes">
+    </div>
+
+    <h3>Precios</h3>
+    <table>
+      <thead>
+        <tr><th>Servicio</th><th>Duración</th><th>Precio (Bs)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Manicure tradicional</td><td>40 min</td><td>35</td></tr>
+        <tr><td>Pedicure tradicional</td><td>50 min</td><td>45</td></tr>
+        <tr><td>Semipermanente (manos)</td><td>60 min</td><td>80</td></tr>
+        <tr><td>Uñas acrílicas</td><td>120 min</td><td>150</td></tr>
+        <tr><td>Nail art (por uña)</td><td>10 min</td><td>5</td></tr>
+        <tr><td>Spa de pies</td><td>70 min</td><td>90</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="text-align:center">Reserva tu cita</h3>
+    <form id="form-reserva">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <select id="servicio" required>
+        <option value="">Elige un servicio</option>
+        <option>Manicure tradicional</option>
+        <option>Pedicure tradicional</option>
+        <option>Semipermanente</option>
+        <option>Uñas acrílicas</option>
+        <option>Spa de pies</option>
+      </select>
+      <input type="date" id="fecha" required>
+      <button type="submit" class="boton">Reservar</button>
+      <p id="mensaje"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Servicio elaborado por Luis Adrian Mejia Contreras</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
