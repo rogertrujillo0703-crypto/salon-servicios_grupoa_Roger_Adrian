@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corte y Estilismo | Belleza Total</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">✂ Belleza Total</div>
+    <button id="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav id="menu">
+      <a href="index.html">Inicio</a>
+      <a href="servicio1.html" class="activo">Corte y Estilismo</a>
+      <a href="servicio2.html">Manicure y Pedicure</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Corte y Estilismo</h2>
+
+    <section class="detalle">
+      <img src="https://loremflickr.com/800/600/hairdresser" alt="Estilista cortando cabello">
+      <div>
+        <h3>¿Qué ofrecemos?</h3>
+        <p>Nuestro equipo de estilistas trabaja contigo para encontrar el corte que mejor va con tu rostro, tu tipo de cabello y tu estilo de vida.</p>
+        <ul>
+          <li>Cortes para damas, caballeros y niños</li>
+          <li>Peinados para eventos (bodas, quinceañeros, graduaciones)</li>
+          <li>Tintes, mechas y balayage</li>
+          <li>Alisados y tratamientos de keratina</li>
+          <li>Hidratación y tratamientos capilares</li>
+        </ul>
+      </div>
+    </section>
+
+    <h3>Galería</h3>
+    <div class="galeria">
+      <img src="https://loremflickr.com/400/300/haircut?lock=1" alt="Corte 1">
+      <img src="https://loremflickr.com/400/300/hairstyle?lock=2" alt="Peinado">
+      <img src="https://loremflickr.com/400/300/barber?lock=3" alt="Barbería">
+      <img src="https://loremflickr.com/400/300/haircolor?lock=4" alt="Tinte">
+    </div>
+
+    <h3>Precios</h3>
+    <table>
+      <thead>
+        <tr><th>Servicio</th><th>Duración</th><th>Precio (Bs)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Corte caballero</td><td>30 min</td><td>40</td></tr>
+        <tr><td>Corte dama</td><td>45 min</td><td>60</td></tr>
+        <tr><td>Corte niño</td><td>25 min</td><td>30</td></tr>
+        <tr><td>Peinado para evento</td><td>60 min</td><td>120</td></tr>
+        <tr><td>Tinte completo</td><td>90 min</td><td>180</td></tr>
+        <tr><td>Keratina</td><td>120 min</td><td>250</td></tr>
+      </tbody>
+    </table>
+
+    <h3 style="text-align:center">Reserva tu cita</h3>
+    <form id="form-reserva">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <select id="servicio" required>
+        <option value="">Elige un servicio</option>
+        <option>Corte caballero</option>
+        <option>Corte dama</option>
+        <option>Peinado para evento</option>
+        <option>Tinte completo</option>
+        <option>Keratina</option>
+      </select>
+      <input type="date" id="fecha" required>
+      <button type="submit" class="boton">Reservar</button>
+      <p id="mensaje"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Servicio elaborado por Roger Trujillo Cortina</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
